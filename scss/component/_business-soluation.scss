@@ -1,0 +1,89 @@
+.business-soluation{
+    padding: 100px 0 50px 0;
+
+    & .business-soluation-block-image{
+        &__image{
+            width: 100%;
+        }
+    }
+
+    & .business-soluation-block-title{
+        margin: 20px 0 0 50px;
+
+        @include media-breakpoint-down(md){
+            margin: 100px 0 0 50px;
+        }
+
+        &__value{
+            font-size: 15px;
+            background: $hotpink-50;
+            padding: 3px 12px;
+            color: $hotpink;
+            font-weight: 700;
+            font-family: var(--heading-font);
+            letter-spacing: 1px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+        &__heading{
+            margin: 0;
+            color: var(--thm-black);
+            font-family: var(--special-font-bold);
+            font-size: 44px;
+            line-height: 56px;
+            letter-spacing: -.03em;
+            padding-bottom: 20px;
+            position: relative;
+
+            &::after{
+                content: '';
+                width: 70px;
+                height: 3px;
+                background-color: $hotpink;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        &__title{
+            margin: 0;
+            color: $gray-300;
+            font-size: 15px;
+            line-height: 32px;
+            padding-top: 20px;
+        }
+        &__heading-value{
+            margin: 0;
+            font-size: 18px;
+            color:$black;
+            font-family: var(--special-font-smb);
+            letter-spacing: -.03;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        &__title-value{
+            margin: 0;
+            color: $gray-300;
+            font-size: 15px;
+            line-height: 32px;
+            padding-bottom: 30px;
+        }
+        &__read-more-button{
+            display: inline-block;
+            vertical-align: middle;
+            border: none;
+            outline: none;
+            background-color:$hotpink;
+            font-size: 15px;
+            color: $white;
+            font-weight: 600;
+            letter-spacing: -.03em;
+            text-transform: capitalize;
+            padding: 13px 38px;
+            border-radius:40px;
+            -webkit-transition: all .4s ease;
+            transition: all .4s ease;
+            text-decoration: none;
+        }
+    }
+}

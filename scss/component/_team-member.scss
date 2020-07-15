@@ -1,0 +1,132 @@
+.team-member{
+    text-align: center;
+    padding: 60px 0;
+    &__value{
+        font-size: 15px;
+        background: $hotpink-50;
+        padding: 3px 12px;
+        color: $hotpink;
+        font-weight: 700;
+        font-family: var(--heading-font);
+        letter-spacing: 1px;
+        display: inline-block;
+        border-radius: 4px;
+    }
+    &__heading{
+        margin: 0 27%;
+        padding: 25px 0 20px 0;
+        font-size: 38px;
+        font-weight: 500;
+        font-family: var(--heading-font);
+        color: $black;
+        letter-spacing: 1px;
+        position: relative;
+        @include media-breakpoint-down(md){
+            margin: 0 10%;
+        }
+        @include media-breakpoint-down(sm){
+            margin: 0 6%;
+        }
+        @include media-breakpoint-down(xs){
+            margin: 0 4%;
+        }
+
+        &::after{
+            
+            content: '';
+            width: 70px;
+            height: 3px;
+            background-color: $hotpink;
+            position: absolute;
+            bottom: 0;
+            left: 43%;
+        }
+    }
+}
+
+.team-member-heading{
+    padding: 50px 0 100px 0;
+
+    & .content {
+        position: relative;
+        width: 100%;
+        margin-bottom: 130px;
+    
+        
+      &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+    
+    
+      .member-profession-desc {
+        position: absolute;
+        top: 88%;
+        left: 5%;
+        width: 90%;
+        text-align: center;
+        -webkit-transition: all .5s ease-in-out;
+        border-radius: 6px;
+    
+        & .member-social-link{
+           visibility: hidden;
+           -webkit-transition: all .2s ease-in-out;
+    
+           &__social-icon {
+            color: $hotpink;
+            font-size: 12px;
+            margin-left: 6px;
+            margin-right: 6px;
+            font-weight: 600;
+            -webkit-transition: all .2s ease-in-out;
+
+            &:hover{
+                color: $black;
+                -webkit-transition: all .2s ease-in-out;
+            }
+        }
+        }
+        
+    
+        &__heading{
+            margin: 0;
+            font-size: 24px;
+            font-family: var(--special-font-bold);
+            color:$black-100;
+            padding-top: 10%;
+        }
+        &__profession-title{
+            margin: 0;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color:$hotpink;
+            padding: 10px 0 25px 0;
+        }
+      }
+
+      &:hover{
+        & .member-profession-desc{
+            -webkit-transition: all .3s ease-in-out;
+             background: $white;
+             box-shadow: 0px 16px 32px 0px rgba(205, 205, 205, 0.56);
+            
+           }
+      }
+    
+      &:hover{
+    
+        & .member-social-link{
+            visibility: visible;
+            transform:translateY(20px);
+            -webkit-transition: all .4s ease-in-out;
+        }
+    }
+    }
+    
+}
+
+
+  

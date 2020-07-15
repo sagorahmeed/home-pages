@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 45px;
+    transition: all .6s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 11;
+
+    @include media-breakpoint-down(xs) {
+        padding: 45px 30px;
+    }
+
+    & .menu-wrapper-logo{
+        &__logo-img{
+            height: 40px;
+            @include media-breakpoint-down(xs){
+                display: none;
+             }
+        }
+    }
+    & .menu-header{
+
+        & #check{
+            display: none;
+        }
+        & .menu-item-list{
+            margin: 0;
+            @media (max-width:1130px){
+                margin-right: 70px;
+            }
+            @media (max-width:1060px){
+                margin-right: 130px;
+            }
+
+            & .fa-times{
+                font-size: 30px;
+                color: white;
+                position: absolute;
+                top: 4%;
+                right: 4%;
+                cursor: pointer;
+            }
+
+            & .menu-item{
+                display: inline-block;
+                list-style: none;
+                width: auto;
+                margin-right: 25px;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+                & .menu-link{
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 15px;
+                    font-family: var(--heading-font);
+                    letter-spacing: 1px;
+                    transition: all .2s ease-in-out;
+
+                    &:hover{
+                        color: $white-200;
+                        transition: all .2s ease-in-out;
+                    }
+                }
+                & .menu-link{
+                    transition: all .2s ease-in-out;
+                }
+            }
+
+        }
+    }
+
+    
+    & .free-trial-button{
+        display: inline-block;
+        list-style: none;
+
+        &__trial-button{
+            background: $hotpink;
+            padding: 14px 20px;
+            color: $white;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 1px;
+            border-radius: 35px;
+            text-decoration: none;
+            box-shadow: 2px 15px 19px 5px $hotpink-50;
+            position: absolute;
+            right: 3%;
+            top: 25%;
+
+            &:hover{
+                background-color: $gray-650;
+                color: $white;
+                box-shadow: 2px 15px 19px 5px $gray-650;
+                transition: all .2s ease-in-out;
+            }
+        }
+        &__nxt-icon{
+            font-size: 13px;
+            margin-left: 8px;
+        }
+
+        &__trial-button{
+            transition: all .2s ease-in-out;
+        }
+
+    }
+}
+
+label#checkboxbtn{
+    display: none;
+    color: $white;
+    font-size: 22px;
+    cursor: pointer;
+
+    @include media-breakpoint-down(xs){
+        position: absolute;
+        left: 5%;
+        top: 34%;
+    }
+}
+
+#checkboxbtnclose{
+    display: none;
+
+
+}
+
+.active{
+    border-bottom: 2px solid $hotpink;
+}
+
+@media (max-width:991px){
+    .menu-item-list{
+        position: absolute;
+        top: 100px;
+        left:-100%;
+        transition: .4s;
+        background-color:$dark-blue;
+        color: $white;
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-top: 100px;
+        top: 0;
+        align-items: flex-start;
+        z-index: 1;
+        overflow-y: scroll;
+    }
+    label#checkboxbtn{
+        display: block;
+    }
+    #checkboxbtnclose{
+        display: block;
+    }
+    .menu-link{
+        display: block;
+        line-height: 40px;
+    }
+    .free-trial-button{
+        margin-top: 30px;
+    }
+    #check:checked ~ .menu-item-list{
+        left: 0;
+    }
+}
+
+.menu.black {
+    background-color: $dark-blue;
+    box-shadow: 1px 1px 15px $gray-650;
+    padding: 30px 30px;
+    transition: all .6s ease-in-out;
+    z-index: 11;
+
+
+    @include media-breakpoint-down(xs) {
+        padding: 40px 50px;
+    }
+}
+
+
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    & .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $white;
+        min-width: 160px;
+        z-index: 1;
+        
+        & .dropdown-item{
+            color: $dark-blue;
+            padding: 10px 16px;
+            text-decoration: none !important;
+            display: block;
+            border-top: 1px solid $hotpink-50 !important;
+            border-bottom: 1px solid $hotpink-50 !important;
+            font-family: var(--heading-font);
+    
+            &:first-child{
+                border-top: 3px solid $hotpink !important;
+            }
+
+            &:hover{
+                background-color: $hotpink;
+                color: $white;
+                transition: all .3s ease-in-out;
+            }
+      }
+   
+      }
+
+      &:hover{
+        & .dropdown-content {
+            display: block;
+        }
+      }
+  }

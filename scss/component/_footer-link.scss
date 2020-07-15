@@ -1,0 +1,166 @@
+.footer-link-body{
+    padding: 80px 0;
+    & .footer-link-details{
+        margin-bottom: 40px;
+        &__image{
+            width: 70%;
+            padding-bottom: 30px;
+        }
+        &__link-title{
+            color: $white;
+            font-size: 15px;
+            font-family: sans-serif;
+            margin: 0;
+            padding-bottom: 30px;
+        }
+        &__link-facebook-icon{
+            font-size: 13px;
+            color: $white-200;
+            background: transparent;
+            border: 1px solid $white-200;
+            padding: 9px 11px;
+            border-radius: 50%;
+           transition: all .3s ease-in-out;
+
+            &:hover{
+                background-color: $primary;
+                color: $white-200;
+                transition: all .3s ease-in-out;
+                border: 1px solid transparent;
+            }
+        }
+        &__link-twitter-icon{
+            font-size: 13px;
+            color: $white-200;
+            background: transparent;
+            border: 1px solid $white-200;
+            padding: 9px 9px;
+            margin:0 5px 0 5px;
+            border-radius: 50%;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                background-color: $skyblue;
+                color: $white-200;
+                transition: all .3s ease-in-out;
+                border: 1px solid transparent;
+            }
+        }
+        &__link-linkedin-icon{
+            font-size: 13px;
+            color: $white-200;
+            background: transparent;
+            border: 1px solid $white-200;
+            padding: 9px 10px;
+            margin:0 5px 0 5px;
+            border-radius: 50%;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                background-color: $skyblue;
+                color: $white-200;
+                transition: all .3s ease-in-out;
+                border: 1px solid transparent;
+            }
+        }
+        &__link-instagram-icon{
+            font-size: 13px;
+            color: $white-200;
+            background: transparent;
+            border: 1px solid $white-200;
+            padding: 9px 10px;
+            margin:0 5px 0 5px;
+            border-radius: 50%;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                background: linear-gradient(to bottom left, rgb(9, 74, 160), #c40c86 0%, #c0af12 100%);
+                color: $white-200;
+                transition: all .3s ease-in-out;
+                border: 1px solid transparent;
+            }
+        }
+    }
+    & .latest-news-details{
+        margin-bottom: 40px;
+
+        @include media-breakpoint-down(sm){
+            display: inline-block;
+        }
+        @include media-breakpoint-down(xs){
+            display: inline-block;
+        }
+        &__heading{
+            color: $white;
+        }
+        & .latest-news-title-desc{
+            margin-top: 20px;
+            border-bottom: 1px solid $gray-300;
+            &__heading{
+                color: $white;
+                margin: 0;
+                font-size: 14px;
+                padding:15px 0 5px 0;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                text-decoration: none;
+
+                &:hover{
+                    color: $skyblue;
+                }
+            }
+            &__title{
+               color:$skyblue;
+               font-size: 14px;
+            }
+        }
+    }
+    & .footer-menu-desc{
+        margin-bottom: 40px;
+        &__heading{
+            color: $white;
+        }
+       & .footer-menu-list{
+           padding: 0;
+        & .footer-menu-item{
+            list-style: none;
+
+            & .footer-menu-link{
+                color: $white;
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 35px;
+               transition: all .3s ease-in-out;
+
+                &:hover{
+                    transition: all .3s ease-in-out;
+                    color: $skyblue;
+                }
+            }
+            & .fa-caret-right{
+                color: $gray;
+                font-size: 14px;
+                margin-right: 5px;
+            }
+        }
+       }
+    }
+    & .business-hours-desc{
+        margin-bottom: 40px;
+        &__heading{
+            color: $white;
+        }
+        &__title{
+            color: $white;
+            font-size: 14px;
+            margin: 0;
+            padding: 15px 0;
+        }
+        &__title-value{
+            color: $white;
+            font-size: 14px;
+            margin: 0;
+            line-height: 40px;
+        }
+    }
+}
