@@ -124,6 +124,9 @@
            padding: 0;
         & .footer-menu-item{
             list-style: none;
+            &:hover{
+                transform: translateY(30px);
+            }
 
             & .footer-menu-link{
                 color: $white;

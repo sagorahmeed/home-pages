@@ -1,6 +1,9 @@
 body{
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .menu{
     display: flex;
     align-items: center;

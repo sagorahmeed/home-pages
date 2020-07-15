@@ -7776,6 +7776,9 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   margin: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 .menu {
   display: flex;
   align-items: center;
@@ -8776,6 +8779,8 @@ label#checkboxbtn {
       padding: 0; }
       .footer-link-body .footer-menu-desc .footer-menu-list .footer-menu-item {
         list-style: none; }
+        .footer-link-body .footer-menu-desc .footer-menu-list .footer-menu-item:hover {
+          transform: translateY(30px); }
         .footer-link-body .footer-menu-desc .footer-menu-list .footer-menu-item .footer-menu-link {
           color: #FFFFFF;
           text-decoration: none;
